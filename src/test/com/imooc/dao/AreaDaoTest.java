@@ -1,6 +1,6 @@
-package dao;
+package com.imooc.dao;
 
-import com.imooc.dao.AreaDao;
+import com.imooc.BaseTest;
 import com.imooc.entity.Area;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,15 +13,16 @@ import static org.junit.Assert.assertEquals;
  * Desciption:
  *
  * @author yxl
- * @date 2018/12/28 10:14
+ * @date 2019/1/4 9:25
  */
-public class AreaTest extends BaseTest {
+public class AreaDaoTest extends BaseTest {
     @Autowired
     private AreaDao areaDao;
+
     @Test
-    public void testQueryArea()
-    {
-        List<Area> areaList = areaDao.queryArea();
-        assertEquals(2,areaList.size());
+    public void queryArea(){
+        List<Area> resultList = areaDao.queryArea();
+        assertEquals(2,resultList.size());
     }
+
 }

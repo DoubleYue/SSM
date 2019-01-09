@@ -1,16 +1,16 @@
+package com.imooc;
+
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
  * Desciption:
- *  配置spring和junit整合，junit启动时加载springIOC容器
+ *
  * @author yxl
- * @date 2018/12/28 10:07
+ * @date 2019/1/4 9:27
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-//配置文件的位置
-@ContextConfiguration({"classpath:spring/spring-dao.xml"})
+@ContextConfiguration({"classpath:spring/spring-dao.xml","classpath:spring/spring-service.xml"})
 public class BaseTest {
-
 }
