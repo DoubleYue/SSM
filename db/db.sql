@@ -128,3 +128,15 @@ create table tb_product(
 	constraint `fk_product_procate` foreign key(product_category_id) references tb_product_category(`product_category_id`),
 	constraint `fk_pro_shop` foreign key(shop_id) references tb_shop(shop_id)
 )ENGINE=INNODB AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8
+
+INSERT INTO `tb_shop_category` VALUES ('1', '重庆小吃', '麻辣鲜香', 'test', '1', null, null, null);
+INSERT INTO `tb_shop_category` VALUES ('2', '重庆小面', '香飘十里', 'ua', '1', null, null, '1');
+
+INSERT INTO `tb_shop` VALUES ('1', '1', '2', '1', '肯德基', '测试描述', '店铺位置很好找，交通很便利', '15663255664', 'https://sfjslkdfj/jinhen/abc.jpg', null, '2019-01-07 07:07:37', '2019-01-07 07:25:49', '1', '审核中');
+INSERT INTO `tb_shop` VALUES ('2', '1', '2', '1', '测试的店铺1', '店铺装修很有特色，店主很有品', '店铺位置很好找，交通很便利', '15663255664', '\\upload\\item\\shop6\\2019010811264264830.jpg', null, '2019-01-08 03:26:42', '2019-01-08 03:26:42', '0', '审核中');
+INSERT INTO `tb_shop` VALUES ('3', '1', '2', null, '老王良心小面', '百年老店，值得信赖', '四川省成都市成华区', '17780652031', '\\upload\\item\\shop11\\2019010917264963427.jpg', null, '2019-01-09 09:26:50', '2019-01-09 09:26:50', '0', null);
+
+INSERT INTO `tb_person_info` VALUES ('1', '小刘', '克利夫兰', '小刘@163.com', '1', '1', '1', null, null);
+
+INSERT INTO `tb_area` VALUES ('2', '西苑', '1', null, null);
+INSERT INTO `tb_area` VALUES ('3', '东苑', '2', null, null);
